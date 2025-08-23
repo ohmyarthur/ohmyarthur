@@ -24,9 +24,3 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="40"/>
 </p>
-
-
-## 📦 Profile Card
-This profile card is automatically updated via [GitHub Actions](.github/workflows/profile-card.yml)!
-
-Feel free to connect or check out my projects below!
