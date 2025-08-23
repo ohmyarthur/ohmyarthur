@@ -1,0 +1,21 @@
+name: Update Profile Card
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Generate profile card SVG
+        run: |
+          python .github/scripts/generate_profile_card.py
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add profile-card.svg
+          git commit -m 'Update profile card [bot]'
+          git push
