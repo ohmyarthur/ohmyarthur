@@ -25,11 +25,9 @@
 
 ---
 
-## 📈 GitHub Stats
+## 📊 GitHub Metrics
 <p align="center">
-  <img src="https://github-readme-stats-mocha-beta-74.vercel.app/api?username=ohmyarthur&show_icons=true&count_private=true&theme=tokyonight" alt="Arthur's GitHub stats"/>
-  <br/>
-  <img src="https://github-readme-stats-mocha-beta-74.vercel.app/api/top-langs/?username=ohmyarthur&layout=compact&theme=tokyonight" alt="Top Languages"/>
+  <img src="https://github.com/ohmyarthur/ohmyarthur/blob/main/metrics.svg" alt="Arthur's GitHub Metrics"/>
 </p>
 
 ---
