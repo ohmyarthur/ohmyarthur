@@ -12,7 +12,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PAT_1 }}
           base: header, activity, community, repositories
           config_timezone: Asia/Jakarta
 
