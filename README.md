@@ -1,4 +1,5 @@
 # Hi, I'm Arthur! 👋
+
 ---
 
 ## 🐾 About Me
@@ -13,27 +14,31 @@
 
 ## 🛠️ Tech Stack
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" alt="Nim" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="40" alt="Golang"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" width="40" alt="Nim"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" alt="PostgreSQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" alt="Next.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" alt="C++"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" alt="C#"/>
 </p>
 
 ---
 
 ## 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ohmyarthur&show_icons=true&theme=tokyonight" alt="Arthur's GitHub stats"/>
+  <img src="https://github-readme-stats-mocha-beta-74.vercel.app/api?username=ohmyarthur&show_icons=true&count_private=true&theme=tokyonight" alt="Arthur's GitHub stats"/>
+  <br/>
+  <img src="https://github-readme-stats-mocha-beta-74.vercel.app/api/top-langs/?username=ohmyarthur&layout=compact&theme=tokyonight" alt="Top Languages"/>
 </p>
 
 ---
 
 ## 📬 Connect with Me
 <p align="center">
-  <a href="https://github.com/ohmyarthur"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40"/></a>
+  <a href="https://github.com/ohmyarthur">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub"/>
+  </a>
   <a href="https://t.me/durovpaIsu">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" width="40" alt="Telegram"/>
   </a>
