@@ -1,30 +1,13 @@
 # Hi, I'm Arthur! 👋
 ---
 
-## 🐾 About Me
+## About Me
 
 - **Name:** Arthur  
 - **Age:** 19  
 - **Location:** Jakarta, Indonesia 🇮🇩  
-- **Passion:** Open-source enthusiast & lifelong learner  
-- **Fun fact:** I can switch between 🐍 Python, 🐹 Go, and ⚡ Nim without coffee... most of the time.
 
----
-
-## 🛠️ Tech Stack
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nim/nim-original.svg" alt="Nim" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="40"/>
-</p>
-
----
-
-## 📈 GitHub Stats
+## GitHub Stats
 <p align="center">
   <img src="https://github.com/ohmyarthur/ohmyarthur/blob/main/metrics.svg" alt="Arthur's GitHub Metrics"/>
 </p>
@@ -35,7 +18,7 @@
 
 ---
 
-## 📬 Connect with Me
+## Connect with Me
 <p align="center">
   <a href="https://github.com/ohmyarthur"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40"/></a>
   <a href="https://t.me/durovpaIsu">
