@@ -1,19 +1,74 @@
-name: Metrics
+name: 📊 GitHub Metrics
 
 on:
   schedule: 
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # Daily at midnight
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Generate Metrics
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-          token: ${{ secrets.PAT_1 }}
+          token: ${{ secrets.PAT_1 }}          
+          user: ${{ github.repository_owner }
           base: header, activity, community, repositories
+          base_indepth: yes
           config_timezone: Asia/Jakarta
-
+          config_display: large
+          config_animations: yes
+          config_output: svg
+          repositories_affiliations: owner, collaborator, organization_member
+          repositories_forks: yes
+          commits_authoring: ${{ github.repository_owner }}
           plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_from: 200
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_repositories: yes
+          plugin_notable_indepth: yes
+          plugin_code: yes
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_visibility: all
+
+      - name: Commit metrics
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add metrics.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update metrics [skip ci]" && git push)
