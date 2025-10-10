@@ -1,101 +1,129 @@
 name: Metrics
 on:
   schedule: 
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *"  # Run daily at midnight
+  workflow_dispatch:      # Manual trigger
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: read
+      pull-requests: read
+      repository-projects: read
+      
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
           token: ${{ secrets.PAT_1 }}
           
-          # User configuration
-          user: ${{ github.repository_owner }}
+          user: ${{ github.actor }}
           
-          # Base metrics
           base: header, activity, community, repositories, metadata
           
-          # Timezone
           config_timezone: Asia/Jakarta
           
-          # IMPORTANT: Enable private mode untuk akses private commits & repos
           repositories: 200
           repositories_batch: 200
           repositories_forks: no
           repositories_affiliations: owner, collaborator, organization_member
+          repositories_categories: owned, collaborated  
+          repositories_features: false                 
+          repositories_languages: false                
           
-          # Commits calendar (termasuk private commits)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          plugin_isocalendar_commit_per_day: 24         
+          plugin_isocalendar_commit_quantity: yes       
           
-          # Lines of code (termasuk private repos)
           plugin_lines: yes
-          plugin_lines_history_limit: 1
-          plugin_lines_repositories_limit: 10
-          plugin_lines_sections: base
+          plugin_lines_history_limit: 2
+          plugin_lines_repositories_limit: 20          
+          plugin_lines_sections: base, revisions, languages
+          plugin_lines_repositories: all               
+          plugin_lines_repositories_skipped: none       
           
-          # Languages (termasuk private repos)
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
+          plugin_languages_limit: 10                   
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_threshold: 0%
+          plugin_languages_threshold: 0%               
           plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout: 30         
           plugin_languages_categories: markup, programming
           plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
+          plugin_languages_recent_days: 30              
+          plugin_languages_recent_load: 500             
+          plugin_languages_repositories: all            
           
-          # Activity
           plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_visibility: all
+          plugin_activity_limit: 10                    
+          plugin_activity_days: 30                      
+          plugin_activity_filter: all                   
+          plugin_activity_visibility: all               
           plugin_activity_timestamps: yes
+          plugin_activity_loading: yes                  
+          plugin_activity_accuracy: high                
           
-          # Notable contributions
+          plugin_commits: yes
+          plugin_commits_limit: 20                      
+          plugin_commits_visible: 5                     
+          plugin_commits_days: 120                       
+          plugin_commits_author: yes                    
+          plugin_commits_repositories: all              
+          
           plugin_notable: yes
-          plugin_notable_from: organization
+          plugin_notable_from: organization, owner, collaborated
           plugin_notable_repositories: yes
           plugin_notable_indepth: yes
+          plugin_notable_types: commit, pull_request, issue, review
           
-          # Achievements
           plugin_achievements: yes
           plugin_achievements_threshold: C
           plugin_achievements_secrets: yes
           plugin_achievements_display: detailed
-          plugin_achievements_limit: 0
+          plugin_achievements_limit: 0                  
+          plugin_achievements_ignored: sponsor          
           
-          # Habits (coding hours, termasuk private)
           plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
+          plugin_habits_from: 500                      
+          plugin_habits_days: 30                        
           plugin_habits_facts: yes
           plugin_habits_charts: yes
           plugin_habits_charts_type: classic
+          plugin_habits_legend: yes
           
-          # Repositories traffic (private repos juga)
           plugin_traffic: yes
+          plugin_traffic_days: 14                       
+          plugin_traffic_per_repository: 10             
+          plugin_traffic_repositories_skipped: none     
           
-          # Follow-up of issues and pull requests
           plugin_followup: yes
-          plugin_followup_sections: repositories
+          plugin_followup_sections: repositories, authors
           plugin_followup_indepth: yes
+          plugin_followup_repositories: all             
           
-          # Config display
+          plugin_reviews: yes
+          plugin_reviews_limit: 10
+          plugin_reviews_seconds_before_close: 60
+          plugin_reviews_seconds_before_abandon: 300
+          
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+          plugin_topics_repositories: all               
+          
           config_display: large
           config_output: svg
           config_padding: 6%, 10%
+          config_background_color: "#0d1117"            
           
-          # Optimization
           optimize: css, xml, svg
           experimental_features: --optimize-svg
+          retry: yes                                    
+          retry_count: 3                                
+          retry_delay: 10000                            
