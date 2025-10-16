@@ -1,8 +1,6 @@
 name: Simple Metrics
 on:
-  # Jalankan setiap hari pada pukul 00:00 WIB (UTC+7)
   schedule: [{cron: "0 17 * * *"}] 
-  # Bisa juga dijalankan manual
   workflow_dispatch:
 
 jobs:
