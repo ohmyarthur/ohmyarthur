@@ -1,6 +1,5 @@
 # Hi,👋
 ---
-## GitHub Stats
 <p align="center">
   <img src="https://github.com/ohmyarthur/ohmyarthur/blob/main/metrics.svg" alt="Arthur's GitHub Metrics"/>
 </p>
