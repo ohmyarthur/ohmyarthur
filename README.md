@@ -1,12 +1,5 @@
-# Hi, I'm Arthur! 👋
+# Hi,👋
 ---
-
-## About Me
-
-- **Name:** Arthur  
-- **Age:** 19  
-- **Location:** Jakarta, Indonesia 🇮🇩  
-
 ## GitHub Stats
 <p align="center">
   <img src="https://github.com/ohmyarthur/ohmyarthur/blob/main/metrics.svg" alt="Arthur's GitHub Metrics"/>
