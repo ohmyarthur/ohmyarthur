@@ -1,19 +1,16 @@
-# Hi,👋
----
-<p align="center">
-  <img src="https://github.com/ohmyarthur/ohmyarthur/blob/main/metrics.svg" alt="Arthur's GitHub Metrics"/>
-</p>
+# Hey 👋, I’m Dias Arthur 
 
-> ⚡ Yes, this account is new — but the commit graph isn’t.  
-> Most of my work lives in private repos (imported from older projects).  
-> Public stuff here is just the tip of the iceberg 
+Independent developer exploring algorithms, systems, and open-source design.  
+I focus on precision, performance, and building things that just work.
 
----
++ 🧠 : Exploring runtime optimization, and language-level abstractions.  
++ 💡 : I like hackathons, deep dives, and late-night refactors that make everything cleaner.  
 
-## Connect with Me
-<p align="center">
-  <a href="https://github.com/ohmyarthur"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40"/></a>
-  <a href="https://t.me/durovpaIsu">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" width="40" alt="Telegram"/>
-  </a>
-</p>
+<a>
+  <img align="right" style="margin-left: 15px;" src="https://github.com/ohmyarthur/ohmyarthur/blob/main/asesst/sleepy1.png?raw=true" width="416" height="488"/>
+</a>
+
++ 🌿 : MBTI — INTJ.  
++ 🖋 : Exploring the balance between structure and chaos — in code and in life.
+
+[![Static Badge](https://img.shields.io/badge/Telegram-@durovpalsu-blue?style=social&logo=telegram)](https://t.me/durovpalsu)
