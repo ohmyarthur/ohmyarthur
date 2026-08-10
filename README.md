@@ -1,9 +1,10 @@
-# Joy
+# Hey There, Im Joy
 
 Independent developer from Bandung, Indonesia.
+Focused on performance and building things that simply work.
 
-I build Telegram tooling, Python/Rust libraries, automation systems, and the occasional visual asset pack. Most of my work lives around small, practical tools: fast crypto bindings, bot infrastructure, MTProto experiments, and utilities that remove repetitive work.
-
-## Stack
-
-Python, Rust, Go, TypeScript, PyO3, Telegram/MTProto tooling, Linux servers, GitHub Actions, systemd, Docker, and the usual pile of CLI glue.
+- Exploring runtime optimization and language-level abstractions
+- Interested in hackathons, deep dives, and late-night refactoring
+- MBTI: INTJ
+- Exploring the balance between structure and chaos, in code and in life
+ast crypto bindings, bot infrastructure, MTProto experiments, and utilities that remove repetitive work.
